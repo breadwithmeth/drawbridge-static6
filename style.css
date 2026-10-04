@@ -20,6 +20,14 @@ h1, h2, h3, h4, .font-head{
     clip-path: circle(var(--clip) at 50% 50%);
 }
 
+/* dark overlay so hero text stays readable over the video */
+.vdodiv::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.7);
+}
+
 /* outlined words for the hero marquee (hero is always on black) */
 .outline-word{
     color: transparent;
