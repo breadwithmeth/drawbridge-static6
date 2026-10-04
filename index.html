@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRAWBRIDGE — соединяем сложные системы</title>
+    <meta name="description"
+        content="DRAWBRIDGE — технологическая и инженерная компания из Казахстана. Software, AI, Infrastructure, Integration, Automation для бизнеса и государства.">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="google-site-verification" content="PDCmQqXXfztYOJOcCglsFE45L1R1GVcaJIcb4L0LeTY" />
+</head>
+
+<body theme="black">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full z-[50] px-[3%] py-5 flex items-center justify-between mix-blend-difference text-white">
+        <a href="#top" class="font-['Pp Neue Machina'] font-semibold tracking-tight text-xl">DRAWBRIDGE</a>
+        <nav class="hidden md:flex items-center gap-8 text-sm font-semibold uppercase">
+            <a href="#solutions" data-i18n="nav_solutions" class="hover:opacity-60 transition-opacity">Решения</a>
+            <a href="#cases" data-i18n="nav_cases" class="hover:opacity-60 transition-opacity">Кейсы</a>
+            <a href="#tech" data-i18n="nav_tech" class="hover:opacity-60 transition-opacity">Технологии</a>
+            <a href="#faq" data-i18n="nav_faq" class="hover:opacity-60 transition-opacity">FAQ</a>
+            <a href="#contact" data-i18n="nav_contact" class="hover:opacity-60 transition-opacity">Контакт</a>
+        </nav>
+        <div class="langswitch flex items-center border border-current rounded-full overflow-hidden text-xs font-semibold">
+            <button data-lang="ru" class="langbtn px-3 py-1.5">RU</button>
+            <button data-lang="en" class="langbtn px-3 py-1.5">EN</button>
+            <button data-lang="kz" class="langbtn px-3 py-1.5">KZ</button>
+        </div>
+    </header>
+
+    <div class="main w-full" id="top">
+        <!-- ============ HERO ============ -->
+        <div data-color="black" class="home section w-full h-[200vh] relative">
+            <div class="w-full sticky top-0 left-0">
+                <div class="btmtext absolute z-[4] w-64 font-semibold bottom-[7%] left-[3%]">
+                    <h1 data-i18n-html="hero_note" class="text-lg leading-snug">Software. AI. Инфраструктура.<br>
+                        Интеграция. Данные.<br>
+                        Для бизнеса и государства.</h1>
+                </div>
+                <div style="--clip: 100%"
+                    class="vdodiv w-full h-screen z-[3] absolute top-0 left-0 bg-black overflow-hidden">
+                    <video autoplay loop muted
+                        class="absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                        src="https://xgjzloifyvgpbmyonaya.supabase.co/storage/v1/object/public/files/bBj1XfrSyi/1ENIoa5sjq"></video>
+                </div>
+                <div class="marqueecontainer w-full h-screen relative overflow-hidden">
+                    <div class="heading w-96 text-center absolute top-[10%] left-1/2 -translate-x-1/2">
+                        <h1 data-i18n="hero_sub" class="text-md font-regular leading-relaxed">DRAWBRIDGE проектирует и
+                            внедряет программные, AI, инфраструктурные и автоматизированные системы для бизнеса и
+                            государства.</h1>
+                        <div class="flex items-center justify-center gap-4 mt-6">
+                            <a href="#contact"
+                                class="border border-current px-6 py-2.5 uppercase text-sm font-semibold hover:bg-white hover:text-black transition-colors"
+                                data-i18n="cta_project">Обсудить проект</a>
+                            <a href="#solutions"
+                                class="border border-current px-6 py-2.5 uppercase text-sm font-semibold hover:bg-white hover:text-black transition-colors"
+                                data-i18n="cta_solutions">Наши решения</a>
+                        </div>
+                    </div>
+                    <div class="slidesm absolute scale-[1] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%]">
+                        <div class="row lft -translate-x-1/2 w-full flex items-center gap-10 whitespace-nowrap">
+                            <div class="elem flex items-center gap-10">
+                                <h1 class="font-['Pp Neue Machina'] font-semibold text-8xl">Software</h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] overflow-hidden rounded-full bg-[var(--salmon)]"></div>
+                            </div>
+                            <div class="elem flex items-center gap-10">
+                                <h1 class="font-['Pp Neue Machina'] font-semibold text-8xl">AI</h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] rounded-full overflow-hidden bg-[var(--cyan)]"></div>
+                            </div>
+                            <div class="elem flex items-center gap-10">
+                                <h1 class="font-['Pp Neue Machina'] font-semibold text-8xl">Infrastructure</h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] rounded-full overflow-hidden bg-[var(--salmon)]"></div>
+                            </div>
+                            <div class="elem flex items-center gap-10">
+                                <h1 class="font-['Pp Neue Machina'] font-semibold text-8xl">Integration</h1>
+                            </div>
+                        </div>
+                        <div class="row rgt -translate-x-1/3 w-full flex items-center gap-10 whitespace-nowrap">
+                            <div class="elem flex items-center gap-10">
+                                <h1 class="font-['Pp Neue Machina'] font-semibold text-8xl">Automation</h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] rounded-full overflow-hidden bg-[var(--cyan)]"></div>
+                            </div>
+                            <div class="elem flex items-center gap-10">
+                                <h1 class="font-['Pp Neue Machina'] font-semibold text-8xl">Data</h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] rounded-full overflow-hidden bg-[var(--salmon)]"></div>
+                            </div>
+                            <div class="elem flex items-center gap-10">
+                                <h1 class="font-['Pp Neue Machina'] font-semibold text-8xl">Security</h1>
+                            </div>
+                            <div class="elem flex items-center gap-10">
+                                <h1 class="font-['Pp Neue Machina'] font-semibold text-8xl">Monitoring</h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] rounded-full overflow-hidden bg-[var(--cyan)]"></div>
+                            </div>
+                        </div>
+                        <div class="row lft -translate-x-2/3 w-full flex items-center gap-10 whitespace-nowrap">
+                            <div class="elem flex items-center gap-10">
+                                <h1 class="font-['Pp Neue Machina'] font-semibold text-8xl">Computer Vision</h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] rounded-full overflow-hidden bg-[var(--salmon)]"></div>
+                            </div>
+                            <div class="elem flex items-center gap-10">
+                                <h1 class="font-['Pp Neue Machina'] font-semibold text-8xl">DevOps</h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] rounded-full overflow-hidden bg-[var(--cyan)]"></div>
+                            </div>
+                            <div class="elem flex items-center gap-10">
+                                <h1 class="font-['Pp Neue Machina'] font-semibold text-8xl">Cloud</h1>
+                            </div>
+                            <div class="elem flex items-center gap-10">
+                                <h1 class="font-['Pp Neue Machina'] font-semibold text-8xl">Legacy</h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] rounded-full overflow-hidden bg-[var(--salmon)]"></div>
+                            </div>
+                        </div>
+                        <div class="row rgt -translate-x-3/4 w-full flex items-center gap-10 whitespace-nowrap">
+                            <div class="elem flex items-center gap-10">
+                                <h1 class="font-['Pp Neue Machina'] font-semibold text-8xl">ERP</h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] rounded-full overflow-hidden bg-[var(--cyan)]"></div>
+                            </div>
+                            <div class="elem flex items-center gap-10">
+                                <h1 class="font-['Pp Neue Machina'] font-semibold text-8xl">1C</h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] rounded-full overflow-hidden bg-[var(--salmon)]"></div>
+                            </div>
+                            <div class="elem flex items-center gap-10">
+                                <h1 class="font-['Pp Neue Machina'] font-semibold text-8xl">Hardware</h1>
+                            </div>
+                            <div class="elem flex items-center gap-10">
+                                <h1 class="font-['Pp Neue Machina'] font-semibold text-8xl">On-premise</h1>
+                                <div class="imgdiv w-[3.5rem] h-[3.5rem] rounded-full overflow-hidden bg-[var(--cyan)]"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============ DIRECTIONS ============ -->
+        <div data-color="cyan" id="directions"
+            class="directions section w-full px-10 py-24 flex justify-between items-start gap-10 relative">
+            <div class="ltext w-[38%] sticky top-24 left-0">
+                <p data-i18n="dir_lead" class="text-md font-semibold leading-relaxed">DRAWBRIDGE — технологическая и
+                    инженерная компания из Казахстана.</p>
+                <h1 data-i18n="dir_heading" class="text-6xl font-light mt-6 font-['Pp Neue Machina']">Соединяем то,
+                    что существует отдельно</h1>
+                <div class="w-fit px-10 py-3 border border-current mt-10">
+                    <div class="masker overflow-hidden">
+                        <span data-i18n="nav_solutions" class="inline-block uppercase text-sm font-semibold">Решения</span>
+                    </div>
+                </div>
+            </div>
+            <div class="cards w-[55%] flex flex-col">
+                <div class="dircard border-b border-current py-8">
+                    <h2 class="text-3xl font-['Pp Neue Machina'] font-semibold">Software</h2>
+                    <p data-i18n="dir_software_desc" class="mt-3 leading-relaxed">Разработка корпоративных веб-систем,
+                        мобильных приложений, внутренних платформ и специализированного ПО.</p>
+                </div>
+                <div class="dircard border-b border-current py-8">
+                    <h2 class="text-3xl font-['Pp Neue Machina'] font-semibold">AI &amp; Computer Vision</h2>
+                    <p data-i18n="dir_ai_desc" class="mt-3 leading-relaxed">Компьютерное зрение, анализ видео,
+                        распознавание объектов и событий, AI-ассистенты, RAG, локальные AI-модели и интеллектуальная
+                        обработка данных.</p>
+                </div>
+                <div class="dircard border-b border-current py-8">
+                    <h2 class="text-3xl font-['Pp Neue Machina'] font-semibold">Automation</h2>
+                    <p data-i18n="dir_automation_desc" class="mt-3 leading-relaxed">Автоматизация операций,
+                        документооборота, контроля, обработки заявок, работы сотрудников и других повторяющихся
+                        процессов.</p>
+                </div>
+                <div class="dircard border-b border-current py-8">
+                    <h2 class="text-3xl font-['Pp Neue Machina'] font-semibold">Integration</h2>
+                    <p data-i18n="dir_integration_desc" class="mt-3 leading-relaxed">Интеграция ERP, CRM, 1С, API, баз
+                        данных, мессенджеров, внешних сервисов и оборудования.</p>
+                </div>
+                <div class="dircard border-b border-current py-8">
+                    <h2 class="text-3xl font-['Pp Neue Machina'] font-semibold">Infrastructure</h2>
+                    <p data-i18n="dir_infra_desc" class="mt-3 leading-relaxed">Серверы, сети, VPN, базы данных,
+                        виртуализация, cloud-инфраструктура и локальные вычислительные системы.</p>
+                </div>
+                <div class="dircard border-b border-current py-8">
+                    <h2 class="text-3xl font-['Pp Neue Machina'] font-semibold">DevOps &amp; CI/CD</h2>
+                    <p data-i18n="dir_devops_desc" class="mt-3 leading-relaxed">Автоматизация сборки, тестирования,
+                        развёртывания и сопровождения программных систем.</p>
+                </div>
+                <div class="dircard border-b border-current py-8">
+                    <h2 class="text-3xl font-['Pp Neue Machina'] font-semibold">Monitoring</h2>
+                    <p data-i18n="dir_monitoring_desc" class="mt-3 leading-relaxed">Мониторинг серверов, приложений,
+                        сетей, оборудования и бизнес-систем.</p>
+                </div>
+                <div class="dircard border-b border-current py-8">
+                    <h2 class="text-3xl font-['Pp Neue Machina'] font-semibold">Security</h2>
+                    <p data-i18n="dir_security_desc" class="mt-3 leading-relaxed">Контроль доступа, защищённые
+                        соединения, аудит инфраструктуры, видеонаблюдение и другие системы безопасности.</p>
+                </div>
+                <div class="dircard py-8">
+                    <h2 class="text-3xl font-['Pp Neue Machina'] font-semibold">Data</h2>
+                    <p data-i18n="dir_data_desc" class="mt-3 leading-relaxed">Сбор, хранение, обработка,
+                        синхронизация и анализ данных.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============ PROCESS (horizontal slides) ============ -->
+        <div data-color="salmon" class="proc section w-full">
+            <div class="pcont h-[600vh] relative">
+                <div class="pslides overflow-hidden sticky top-0 left-0 flex gap-9 w-full h-[100vh]">
+                    <div class="pslide w-full h-screen flex-shrink-0 flex items-center justify-center">
+                        <div class="text-center font-['Pp Neue Machina']">
+                            <h3 data-i18n="proc_label" class="uppercase text-sm font-semibold tracking-widest mb-6">Как
+                                мы работаем</h3>
+                            <h1 data-i18n="proc_title" class="text-7xl leading-tight">Инженерный процесс,<br>а не
+                                абстракция</h1>
+                        </div>
+                    </div>
+                    <div class="pslide w-full h-screen flex-shrink-0 flex items-center justify-center relative">
+                        <div class="w-[55%]">
+                            <h3 class="text-[10rem] leading-none font-['Pp Neue Machina'] font-semibold">01</h3>
+                            <h1 data-i18n="proc1_t" class="text-6xl font-['Pp Neue Machina'] mt-4">Анализ</h1>
+                            <p data-i18n="proc1_d" class="text-xl mt-6 leading-relaxed">Изучаем существующую
+                                инфраструктуру, процессы, системы и ограничения.</p>
+                        </div>
+                    </div>
+                    <div class="pslide w-full h-screen flex-shrink-0 flex items-center justify-center relative">
+                        <div class="w-[55%]">
+                            <h3 class="text-[10rem] leading-none font-['Pp Neue Machina'] font-semibold">02</h3>
+                            <h1 data-i18n="proc2_t" class="text-6xl font-['Pp Neue Machina'] mt-4">Архитектура</h1>
+                            <p data-i18n="proc2_d" class="text-xl mt-6 leading-relaxed">Определяем, какие компоненты
+                                необходимы и как они должны взаимодействовать.</p>
+                        </div>
+                    </div>
+                    <div class="pslide w-full h-screen flex-shrink-0 flex items-center justify-center relative">
+                        <div class="w-[55%]">
+                            <h3 class="text-[10rem] leading-none font-['Pp Neue Machina'] font-semibold">03</h3>
+                            <h1 data-i18n="proc3_t" class="text-6xl font-['Pp Neue Machina'] mt-4">Разработка</h1>
+                            <p data-i18n="proc3_d" class="text-xl mt-6 leading-relaxed">Создаём программные компоненты,
+                                интеграции, AI-модули и автоматизацию.</p>
+                        </div>
+                    </div>
+                    <div class="pslide w-full h-screen flex-shrink-0 flex items-center justify-center relative">
+                        <div class="w-[55%]">
+                            <h3 class="text-[10rem] leading-none font-['Pp Neue Machina'] font-semibold">04</h3>
+                            <h1 data-i18n="proc4_t" class="text-6xl font-['Pp Neue Machina'] mt-4">Интеграция</h1>
+                            <p data-i18n="proc4_d" class="text-xl mt-6 leading-relaxed">Подключаем существующие системы,
+                                оборудование, API, базы данных и сервисы.</p>
+                        </div>
+                    </div>
+                    <div class="pslide w-full h-screen flex-shrink-0 flex items-center justify-center relative">
+                        <div class="w-[55%]">
+                            <h3 class="text-[10rem] leading-none font-['Pp Neue Machina'] font-semibold">05</h3>
+                            <h1 data-i18n="proc5_t" class="text-6xl font-['Pp Neue Machina'] mt-4">Внедрение</h1>
+                            <p data-i18n="proc5_d" class="text-xl mt-6 leading-relaxed">Запускаем систему в реальной
+                                инфраструктуре.</p>
+                        </div>
+                    </div>
+                    <div class="pslide w-full h-screen flex-shrink-0 flex items-center justify-center relative">
+                        <div class="w-[55%]">
+                            <h3 class="text-[10rem] leading-none font-['Pp Neue Machina'] font-semibold">06</h3>
+                            <h1 data-i18n="proc6_t" class="text-6xl font-['Pp Neue Machina'] mt-4">Сопровождение</h1>
+                            <p data-i18n="proc6_d" class="text-xl mt-6 leading-relaxed">Мониторим работу системы,
+                                устраняем проблемы и развиваем решение.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============ SOLUTIONS ============ -->
+        <div data-color="black" id="solutions" class="solutions section w-full py-24 px-10">
+            <h3 data-i18n="sol_label" class="uppercase text-sm font-semibold tracking-widest mb-4">Решения</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+                <div class="solcard border border-current p-8 flex flex-col justify-between min-h-[14rem]">
+                    <h2 data-i18n="sol1_t" class="text-2xl font-['Pp Neue Machina'] font-semibold">Intelligent Systems</h2>
+                    <p data-i18n="sol1_d" class="mt-6 leading-relaxed">Системы, которые самостоятельно анализируют
+                        данные и помогают принимать решения.</p>
+                </div>
+                <div class="solcard border border-current p-8 flex flex-col justify-between min-h-[14rem]">
+                    <h2 data-i18n="sol2_t" class="text-2xl font-['Pp Neue Machina'] font-semibold">Computer Vision</h2>
+                    <p data-i18n="sol2_d" class="mt-6 leading-relaxed">Видеоаналитика, обнаружение объектов, контроль
+                        событий, аналитика поведения и автоматизированный мониторинг.</p>
+                </div>
+                <div class="solcard border border-current p-8 flex flex-col justify-between min-h-[14rem]">
+                    <h2 data-i18n="sol3_t" class="text-2xl font-['Pp Neue Machina'] font-semibold">Business Automation</h2>
+                    <p data-i18n="sol3_d" class="mt-6 leading-relaxed">Автоматизация внутренних операций и сокращение
+                        ручного труда.</p>
+                </div>
+                <div class="solcard border border-current p-8 flex flex-col justify-between min-h-[14rem]">
+                    <h2 data-i18n="sol4_t" class="text-2xl font-['Pp Neue Machina'] font-semibold">Enterprise Integration</h2>
+                    <p data-i18n="sol4_d" class="mt-6 leading-relaxed">Связывание существующих корпоративных систем
+                        между собой.</p>
+                </div>
+                <div class="solcard border border-current p-8 flex flex-col justify-between min-h-[14rem]">
+                    <h2 data-i18n="sol5_t" class="text-2xl font-['Pp Neue Machina'] font-semibold">Infrastructure Platforms</h2>
+                    <p data-i18n="sol5_d" class="mt-6 leading-relaxed">Серверная, сетевая и cloud-инфраструктура для
+                        критически важных систем.</p>
+                </div>
+                <div class="solcard border border-current p-8 flex flex-col justify-between min-h-[14rem]">
+                    <h2 data-i18n="sol6_t" class="text-2xl font-['Pp Neue Machina'] font-semibold">Monitoring Platforms</h2>
+                    <p data-i18n="sol6_d" class="mt-6 leading-relaxed">Единый контроль состояния инфраструктуры,
+                        оборудования и программных систем.</p>
+                </div>
+                <div class="solcard border border-current p-8 flex flex-col justify-between min-h-[14rem]">
+                    <h2 data-i18n="sol7_t" class="text-2xl font-['Pp Neue Machina'] font-semibold">Security Systems</h2>
+                    <p data-i18n="sol7_d" class="mt-6 leading-relaxed">Интегрированные системы физической и
+                        информационной безопасности.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============ WHAT WE CAN BUILD ============ -->
+        <div data-color="cyan" class="build section w-full py-24 font-['Pp Neue Machina']">
+            <div class="px-10 flex items-end justify-between">
+                <h1 data-i18n="build_label" class="uppercase text-6xl tracking-tighter">Что мы можем собрать</h1>
+            </div>
+            <div class="list w-full mt-12 px-10">
+                <div class="listelem w-full py-[1.6rem] border-b-2 border-current relative cursor-default">
+                    <div class="relative flex items-center justify-between z-[3]">
+                        <div class="left flex gap-16 items-baseline">
+                            <h3 class="text-2xl opacity-60">01</h3>
+                            <h1 data-i18n="build_1" class="text-3xl">система видеонаблюдения с AI-аналитикой</h1>
+                        </div>
+                    </div>
+                    <div class="bluelayer z-[2] absolute bottom-0 h-[0] left-0 w-full bg-[var(--salmon)]"></div>
+                </div>
+                <div class="listelem w-full py-[1.6rem] border-b-2 border-current relative cursor-default">
+                    <div class="relative flex items-center justify-between z-[3]">
+                        <div class="left flex gap-16 items-baseline">
+                            <h3 class="text-2xl opacity-60">02</h3>
+                            <h1 data-i18n="build_2" class="text-3xl">система отслеживания сотрудников между камерами</h1>
+                        </div>
+                    </div>
+                    <div class="bluelayer z-[2] absolute bottom-0 h-[0] left-0 w-full bg-[var(--salmon)]"></div>
+                </div>
+                <div class="listelem w-full py-[1.6rem] border-b-2 border-current relative cursor-default">
+                    <div class="relative flex items-center justify-between z-[3]">
+                        <div class="left flex gap-16 items-baseline">
+                            <h3 class="text-2xl opacity-60">03</h3>
+                            <h1 data-i18n="build_3" class="text-3xl">AI-аудит медицинских документов</h1>
+                        </div>
+                    </div>
+                    <div class="bluelayer z-[2] absolute bottom-0 h-[0] left-0 w-full bg-[var(--salmon)]"></div>
+                </div>
+                <div class="listelem w-full py-[1.6rem] border-b-2 border-current relative cursor-default">
+                    <div class="relative flex items-center justify-between z-[3]">
+                        <div class="left flex gap-16 items-baseline">
+                            <h3 class="text-2xl opacity-60">04</h3>
+                            <h1 data-i18n="build_4" class="text-3xl">интеграция 1С с внешними системами</h1>
+                        </div>
+                    </div>
+                    <div class="bluelayer z-[2] absolute bottom-0 h-[0] left-0 w-full bg-[var(--salmon)]"></div>
+                </div>
+                <div class="listelem w-full py-[1.6rem] border-b-2 border-current relative cursor-default">
+                    <div class="relative flex items-center justify-between z-[3]">
+                        <div class="left flex gap-16 items-baseline">
+                            <h3 class="text-2xl opacity-60">05</h3>
+                            <h1 data-i18n="build_5" class="text-3xl">корпоративный портал</h1>
+                        </div>
+                    </div>
+                    <div class="bluelayer z-[2] absolute bottom-0 h-[0] left-0 w-full bg-[var(--salmon)]"></div>
+                </div>
+                <div class="listelem w-full py-[1.6rem] border-b-2 border-current relative cursor-default">
+                    <div class="relative flex items-center justify-between z-[3]">
+                        <div class="left flex gap-16 items-baseline">
+                            <h3 class="text-2xl opacity-60">06</h3>
+                            <h1 data-i18n="build_6" class="text-3xl">система обработки заявок из WhatsApp и Telegram</h1>
+                        </div>
+                    </div>
+                    <div class="bluelayer z-[2] absolute bottom-0 h-[0] left-0 w-full bg-[var(--salmon)]"></div>
+                </div>
+                <div class="listelem w-full py-[1.6rem] border-b-2 border-current relative cursor-default">
+                    <div class="relative flex items-center justify-between z-[3]">
+                        <div class="left flex gap-16 items-baseline">
+                            <h3 class="text-2xl opacity-60">07</h3>
+                            <h1 data-i18n="build_7" class="text-3xl">автоматизация call-центра</h1>
+                        </div>
+                    </div>
+                    <div class="bluelayer z-[2] absolute bottom-0 h-[0] left-0 w-full bg-[var(--salmon)]"></div>
+                </div>
+                <div class="listelem w-full py-[1.6rem] border-b-2 border-current relative cursor-default">
+                    <div class="relative flex items-center justify-between z-[3]">
+                        <div class="left flex gap-16 items-baseline">
+                            <h3 class="text-2xl opacity-60">08</h3>
+                            <h1 data-i18n="build_8" class="text-3xl">локальная AI-инфраструктура</h1>
+                        </div>
+                    </div>
+                    <div class="bluelayer z-[2] absolute bottom-0 h-[0] left-0 w-full bg-[var(--salmon)]"></div>
+                </div>
+                <div class="listelem w-full py-[1.6rem] border-b-2 border-current relative cursor-default">
+                    <div class="relative flex items-center justify-between z-[3]">
+                        <div class="left flex gap-16 items-baseline">
+                            <h3 class="text-2xl opacity-60">09</h3>
+                            <h1 data-i18n="build_9" class="text-3xl">система мониторинга серверов</h1>
+                        </div>
+                    </div>
+                    <div class="bluelayer z-[2] absolute bottom-0 h-[0] left-0 w-full bg-[var(--salmon)]"></div>
+                </div>
+                <div class="listelem w-full py-[1.6rem] border-b-2 border-current relative cursor-default">
+                    <div class="relative flex items-center justify-between z-[3]">
+                        <div class="left flex gap-16 items-baseline">
+                            <h3 class="text-2xl opacity-60">10</h3>
+                            <h1 data-i18n="build_10" class="text-3xl">CI/CD-инфраструктура</h1>
+                        </div>
+                    </div>
+                    <div class="bluelayer z-[2] absolute bottom-0 h-[0] left-0 w-full bg-[var(--salmon)]"></div>
+                </div>
+                <div class="listelem w-full py-[1.6rem] border-b-2 border-current relative cursor-default">
+                    <div class="relative flex items-center justify-between z-[3]">
+                        <div class="left flex gap-16 items-baseline">
+                            <h3 class="text-2xl opacity-60">11</h3>
+                            <h1 data-i18n="build_11" class="text-3xl">интеграция оборудования с корпоративным ПО</h1>
+                        </div>
+                    </div>
+                    <div class="bluelayer z-[2] absolute bottom-0 h-[0] left-0 w-full bg-[var(--salmon)]"></div>
+                </div>
+                <div class="listelem w-full py-[1.6rem] border-b-2 border-current relative cursor-default">
+                    <div class="relative flex items-center justify-between z-[3]">
+                        <div class="left flex gap-16 items-baseline">
+                            <h3 class="text-2xl opacity-60">12</h3>
+                            <h1 data-i18n="build_12" class="text-3xl">системы контроля доступа</h1>
+                        </div>
+                    </div>
+                    <div class="bluelayer z-[2] absolute bottom-0 h-[0] left-0 w-full bg-[var(--salmon)]"></div>
+                </div>
+                <div class="listelem w-full py-[1.6rem] border-b-2 border-current relative cursor-default">
+                    <div class="relative flex items-center justify-between z-[3]">
+                        <div class="left flex gap-16 items-baseline">
+                            <h3 class="text-2xl opacity-60">13</h3>
+                            <h1 data-i18n="build_13" class="text-3xl">системы анализа данных</h1>
+                        </div>
+                    </div>
+                    <div class="bluelayer z-[2] absolute bottom-0 h-[0] left-0 w-full bg-[var(--salmon)]"></div>
+                </div>
+                <div class="listelem w-full py-[1.6rem] relative cursor-default">
+                    <div class="relative flex items-center justify-between z-[3]">
+                        <div class="left flex gap-16 items-baseline">
+                            <h3 class="text-2xl opacity-60">14</h3>
+                            <h1 data-i18n="build_14" class="text-3xl">внутренние корпоративные платформы</h1>
+                        </div>
+                    </div>
+                    <div class="bluelayer z-[2] absolute bottom-0 h-[0] left-0 w-full bg-[var(--salmon)]"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============ CASES ============ -->
+        <div data-color="white" id="cases" class="cases section w-full py-24 px-10">
+            <h3 data-i18n="case_label" class="uppercase text-sm font-semibold tracking-widest mb-4">Cases</h3>
+            <h1 data-i18n="case_title" class="text-6xl font-['Pp Neue Machina'] tracking-tighter">Реальные внедрения</h1>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-14">
+                <div class="casecard border-2 border-black p-10">
+                    <h2 data-i18n="case1_name" class="text-3xl font-['Pp Neue Machina'] font-semibold">Кейс 01</h2>
+                    <div class="mt-8 flex flex-col gap-6 text-base leading-relaxed">
+                        <div>
+                            <h4 data-i18n="case_t" class="uppercase text-xs font-bold tracking-widest opacity-60">Задача</h4>
+                            <p data-i18n="case1_t" class="mt-1">[Заполнить: что требовалось решить]</p>
+                        </div>
+                        <div>
+                            <h4 data-i18n="case_src" class="uppercase text-xs font-bold tracking-widest opacity-60">Исходная система</h4>
+                            <p data-i18n="case1_src" class="mt-1">[Заполнить: какие технологии, процессы или инфраструктура уже существовали]</p>
+                        </div>
+                        <div>
+                            <h4 data-i18n="case_done" class="uppercase text-xs font-bold tracking-widest opacity-60">Что сделали</h4>
+                            <p data-i18n="case1_done" class="mt-1">[Заполнить: какие компоненты разработали или интегрировали]</p>
+                        </div>
+                        <div>
+                            <h4 data-i18n="case_tech" class="uppercase text-xs font-bold tracking-widest opacity-60">Технологии</h4>
+                            <p data-i18n="case1_tech" class="mt-1">[Заполнить: конкретный стек и интеграции]</p>
+                        </div>
+                        <div>
+                            <h4 data-i18n="case_res" class="uppercase text-xs font-bold tracking-widest opacity-60">Результат</h4>
+                            <p data-i18n="case1_res" class="mt-1">[Заполнить: что изменилось после внедрения]</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="casecard border-2 border-black p-10">
+                    <h2 data-i18n="case2_name" class="text-3xl font-['Pp Neue Machina'] font-semibold">Кейс 02</h2>
+                    <div class="mt-8 flex flex-col gap-6 text-base leading-relaxed">
+                        <div>
+                            <h4 data-i18n="case_t" class="uppercase text-xs font-bold tracking-widest opacity-60">Задача</h4>
+                            <p data-i18n="case2_t" class="mt-1">[Заполнить: что требовалось решить]</p>
+                        </div>
+                        <div>
+                            <h4 data-i18n="case_src" class="uppercase text-xs font-bold tracking-widest opacity-60">Исходная система</h4>
+                            <p data-i18n="case2_src" class="mt-1">[Заполнить: какие технологии, процессы или инфраструктура уже существовали]</p>
+                        </div>
+                        <div>
+                            <h4 data-i18n="case_done" class="uppercase text-xs font-bold tracking-widest opacity-60">Что сделали</h4>
+                            <p data-i18n="case2_done" class="mt-1">[Заполнить: какие компоненты разработали или интегрировали]</p>
+                        </div>
+                        <div>
+                            <h4 data-i18n="case_tech" class="uppercase text-xs font-bold tracking-widest opacity-60">Технологии</h4>
+                            <p data-i18n="case2_tech" class="mt-1">[Заполнить: конкретный стек и интеграции]</p>
+                        </div>
+                        <div>
+                            <h4 data-i18n="case_res" class="uppercase text-xs font-bold tracking-widest opacity-60">Результат</h4>
+                            <p data-i18n="case2_res" class="mt-1">[Заполнить: что изменилось после внедрения]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============ TECHNOLOGIES ============ -->
+        <div data-color="black" id="tech" class="tech section w-full py-24 px-10">
+            <h1 data-i18n="tech_label" class="text-6xl font-['Pp Neue Machina'] tracking-tighter">Технологии</h1>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10 mt-14">
+                <div>
+                    <h2 class="text-xl font-['Pp Neue Machina'] font-semibold mb-5">Development</h2>
+                    <ul class="flex flex-col gap-2 opacity-80 text-sm">
+                        <li>Web</li>
+                        <li>Mobile</li>
+                        <li>Backend</li>
+                        <li>API</li>
+                        <li>Microservices</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-xl font-['Pp Neue Machina'] font-semibold mb-5">AI</h2>
+                    <ul class="flex flex-col gap-2 opacity-80 text-sm">
+                        <li>LLM</li>
+                        <li>RAG</li>
+                        <li>Computer Vision</li>
+                        <li>OCR</li>
+                        <li>Speech</li>
+                        <li>Local AI</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-xl font-['Pp Neue Machina'] font-semibold mb-5">Infrastructure</h2>
+                    <ul class="flex flex-col gap-2 opacity-80 text-sm">
+                        <li>Linux</li>
+                        <li>Windows Server</li>
+                        <li>Virtualization</li>
+                        <li>Cloud</li>
+                        <li>VPN</li>
+                        <li>Networking</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-xl font-['Pp Neue Machina'] font-semibold mb-5">Data</h2>
+                    <ul class="flex flex-col gap-2 opacity-80 text-sm">
+                        <li>PostgreSQL</li>
+                        <li>MS SQL</li>
+                        <li>Redis</li>
+                        <li>Object Storage</li>
+                        <li>Data Processing</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-xl font-['Pp Neue Machina'] font-semibold mb-5">DevOps</h2>
+                    <ul class="flex flex-col gap-2 opacity-80 text-sm">
+                        <li>Docker</li>
+                        <li>CI/CD</li>
+                        <li>Git</li>
+                        <li>Monitoring</li>
+                        <li>Logging</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-xl font-['Pp Neue Machina'] font-semibold mb-5">Integration</h2>
+                    <ul class="flex flex-col gap-2 opacity-80 text-sm">
+                        <li>REST API</li>
+                        <li>Webhooks</li>
+                        <li>1C</li>
+                        <li>CRM</li>
+                        <li>ERP</li>
+                        <li>Telegram</li>
+                        <li>WhatsApp</li>
+                        <li>IoT</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============ AUDIENCE ============ -->
+        <div data-color="cyan" class="audience section w-full py-24 px-10">
+            <h1 data-i18n="aud_label" class="text-6xl font-['Pp Neue Machina'] tracking-tighter">Для кого</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-14">
+                <div class="border-t-2 border-current pt-8">
+                    <h2 data-i18n="aud1_t" class="text-3xl font-['Pp Neue Machina'] font-semibold">Бизнес</h2>
+                    <p data-i18n="aud1_d" class="mt-4 leading-relaxed">Компании, которым необходимо автоматизировать
+                        существующие процессы и связать разрозненные системы.</p>
+                </div>
+                <div class="border-t-2 border-current pt-8">
+                    <h2 data-i18n="aud2_t" class="text-3xl font-['Pp Neue Machina'] font-semibold">Enterprise</h2>
+                    <p data-i18n="aud2_d" class="mt-4 leading-relaxed">Организации со сложной IT-инфраструктурой,
+                        большим количеством внутренних систем и интеграций.</p>
+                </div>
+                <div class="border-t-2 border-current pt-8">
+                    <h2 data-i18n="aud3_t" class="text-3xl font-['Pp Neue Machina'] font-semibold">Государственные
+                        организации</h2>
+                    <p data-i18n="aud3_d" class="mt-4 leading-relaxed">Разработка и интеграция специализированных
+                        информационных систем, автоматизация процессов и работа с большими объёмами данных.</p>
+                </div>
+                <div class="border-t-2 border-current pt-8">
+                    <h2 data-i18n="aud4_t" class="text-3xl font-['Pp Neue Machina'] font-semibold">Производственные и
+                        инфраструктурные компании</h2>
+                    <p data-i18n="aud4_d" class="mt-4 leading-relaxed">Системы мониторинга, компьютерного зрения,
+                        автоматизации и интеграции оборудования.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============ WHY DRAWBRIDGE ============ -->
+        <div data-color="salmon" class="why section w-full py-24 px-10">
+            <h1 data-i18n="why_label" class="text-6xl font-['Pp Neue Machina'] tracking-tighter">Почему DRAWBRIDGE</h1>
+            <div class="w-[75%] mt-20">
+                <h3 data-i18n="why_para"
+                    class="textpara text-2xl md:text-3xl leading-[2.2rem] font-['Pp Neue Machina']">DRAWBRIDGE —
+                    инженерная компания, которая соединяет программное обеспечение, инфраструктуру, AI, данные,
+                    оборудование и существующие корпоративные системы в работающие решения.</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-8 mt-20">
+                <p data-i18n="why_1" class="border-t border-current pt-4 leading-relaxed">работаем с существующей
+                    инфраструктурой, а не предлагаем заменить всё с нуля</p>
+                <p data-i18n="why_2" class="border-t border-current pt-4 leading-relaxed">интегрируем разные системы в
+                    единую архитектуру</p>
+                <p data-i18n="why_3" class="border-t border-current pt-4 leading-relaxed">можем работать одновременно с
+                    software и hardware</p>
+                <p data-i18n="why_4" class="border-t border-current pt-4 leading-relaxed">умеем работать с
+                    legacy-системами</p>
+                <p data-i18n="why_5" class="border-t border-current pt-4 leading-relaxed">строим локальные и
+                    cloud-системы</p>
+                <p data-i18n="why_6" class="border-t border-current pt-4 leading-relaxed">используем AI там, где он
+                    решает конкретную задачу</p>
+                <p data-i18n="why_7" class="border-t border-current pt-4 leading-relaxed">можем разрабатывать систему
+                    целиком — от инфраструктуры до пользовательского интерфейса</p>
+                <p data-i18n="why_8" class="border-t border-current pt-4 leading-relaxed">ориентируемся на эксплуатацию
+                    системы после запуска, а не только на разработку</p>
+            </div>
+        </div>
+
+        <!-- ============ GEOGRAPHY ============ -->
+        <div data-color="black" class="geo section w-full py-32 px-10">
+            <div class="flex flex-col items-start justify-between gap-10 md:flex-row md:items-end">
+                <div>
+                    <h3 data-i18n="geo_label" class="uppercase text-sm font-semibold tracking-widest mb-6">География
+                    </h3>
+                    <h1 data-i18n="geo_country" class="text-8xl font-['Pp Neue Machina'] tracking-tighter">Kazakhstan
+                    </h1>
+                </div>
+                <div class="text-right">
+                    <p class="text-2xl font-['Pp Neue Machina']">Astana</p>
+                    <p class="text-2xl font-['Pp Neue Machina'] opacity-80">Almaty</p>
+                    <p class="text-2xl font-['Pp Neue Machina'] opacity-60">Karaganda</p>
+                    <p class="text-2xl font-['Pp Neue Machina'] opacity-40">Pavlodar</p>
+                </div>
+            </div>
+            <p data-i18n="geo_note" class="w-[60%] mt-16 leading-relaxed opacity-80">Работаем с распределёнными и
+                удалёнными инфраструктурами — подключение, администрирование и сопровождение систем независимо от их
+                расположения.</p>
+        </div>
+
+        <!-- ============ FAQ ============ -->
+        <div data-color="white" id="faq" class="faq section w-full py-24 px-10">
+            <h1 data-i18n="faq_label" class="text-6xl font-['Pp Neue Machina'] tracking-tighter">FAQ</h1>
+            <div class="mt-14 flex flex-col">
+                <div class="faqitem border-b-2 border-black">
+                    <button class="faqq w-full flex items-center justify-between py-6 text-left gap-6">
+                        <span data-i18n="faq1_q" class="text-xl font-semibold">Можно ли интегрировать DRAWBRIDGE с
+                            нашей существующей системой?</span>
+                        <span class="faqico text-3xl font-['Pp Neue Machina']">+</span>
+                    </button>
+                    <div class="faqa overflow-hidden h-0 transition-[height] duration-300">
+                        <p data-i18n="faq1_a" class="pb-6 leading-relaxed max-w-3xl">Да. Основной подход — использовать
+                            существующую инфраструктуру и интегрировать необходимые компоненты через API, базы данных,
+                            webhooks или специализированные коннекторы.</p>
+                    </div>
+                </div>
+                <div class="faqitem border-b-2 border-black">
+                    <button class="faqq w-full flex items-center justify-between py-6 text-left gap-6">
+                        <span data-i18n="faq2_q" class="text-xl font-semibold">Работаете ли вы с 1С?</span>
+                        <span class="faqico text-3xl font-['Pp Neue Machina']">+</span>
+                    </button>
+                    <div class="faqa overflow-hidden h-0 transition-[height] duration-300">
+                        <p data-i18n="faq2_a" class="pb-6 leading-relaxed max-w-3xl">Да. Возможны интеграции с 1С,
+                            внешними системами, базами данных и API.</p>
+                    </div>
+                </div>
+                <div class="faqitem border-b-2 border-black">
+                    <button class="faqq w-full flex items-center justify-between py-6 text-left gap-6">
+                        <span data-i18n="faq3_q" class="text-xl font-semibold">Можно ли развернуть систему локально?</span>
+                        <span class="faqico text-3xl font-['Pp Neue Machina']">+</span>
+                    </button>
+                    <div class="faqa overflow-hidden h-0 transition-[height] duration-300">
+                        <p data-i18n="faq3_a" class="pb-6 leading-relaxed max-w-3xl">Да. Для систем с повышенными
+                            требованиями к контролю данных возможна on-premise инфраструктура.</p>
+                    </div>
+                </div>
+                <div class="faqitem border-b-2 border-black">
+                    <button class="faqq w-full flex items-center justify-between py-6 text-left gap-6">
+                        <span data-i18n="faq4_q" class="text-xl font-semibold">Работаете ли вы с AI-моделями локально?</span>
+                        <span class="faqico text-3xl font-['Pp Neue Machina']">+</span>
+                    </button>
+                    <div class="faqa overflow-hidden h-0 transition-[height] duration-300">
+                        <p data-i18n="faq4_a" class="pb-6 leading-relaxed max-w-3xl">Да. В зависимости от задачи можно
+                            использовать облачные модели или локальное AI-развёртывание.</p>
+                    </div>
+                </div>
+                <div class="faqitem border-b-2 border-black">
+                    <button class="faqq w-full flex items-center justify-between py-6 text-left gap-6">
+                        <span data-i18n="faq5_q" class="text-xl font-semibold">Можно ли подключить существующие камеры
+                            и оборудование?</span>
+                        <span class="faqico text-3xl font-['Pp Neue Machina']">+</span>
+                    </button>
+                    <div class="faqa overflow-hidden h-0 transition-[height] duration-300">
+                        <p data-i18n="faq5_a" class="pb-6 leading-relaxed max-w-3xl">Да. При наличии подходящих
+                            протоколов и интерфейсов оборудование можно интегрировать с программной системой.</p>
+                    </div>
+                </div>
+                <div class="faqitem border-b-2 border-black">
+                    <button class="faqq w-full flex items-center justify-between py-6 text-left gap-6">
+                        <span data-i18n="faq6_q" class="text-xl font-semibold">Вы разрабатываете только ПО?</span>
+                        <span class="faqico text-3xl font-['Pp Neue Machina']">+</span>
+                    </button>
+                    <div class="faqa overflow-hidden h-0 transition-[height] duration-300">
+                        <p data-i18n="faq6_a" class="pb-6 leading-relaxed max-w-3xl">Нет. DRAWBRIDGE работает на стыке
+                            software, infrastructure, AI, automation и hardware.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============ FINAL CTA ============ -->
+        <div data-color="black" id="contact" class="cta section w-full py-32 px-10">
+            <div class="flex flex-col lg:flex-row justify-between gap-16">
+                <div class="lg:w-[45%]">
+                    <h1 data-i18n="cta_title" class="text-6xl font-['Pp Neue Machina'] tracking-tighter">РАССКАЖИТЕ О
+                        ЗАДАЧЕ</h1>
+                    <p data-i18n="cta_sub" class="mt-8 leading-relaxed opacity-80 max-w-md">Опишите существующую
+                        систему, проблему или задачу. Мы определим, что можно автоматизировать, интегрировать или
+                        построить с нуля.</p>
+                </div>
+                <!-- Static form: opens the user's mail client. Replace info@drawbridge.kz with the real address. -->
+                <form id="ctaform" class="lg:w-[45%] flex flex-col gap-6" action="mailto:info@drawbridge.kz"
+                    method="post" enctype="text/plain">
+                    <label class="flex flex-col gap-2">
+                        <span data-i18n="f_name" class="uppercase text-xs font-bold tracking-widest opacity-60">Имя</span>
+                        <input required name="name" type="text"
+                            class="bg-transparent border-b border-current py-2 outline-none focus:border-[var(--salmon)] transition-colors">
+                    </label>
+                    <label class="flex flex-col gap-2">
+                        <span data-i18n="f_company"
+                            class="uppercase text-xs font-bold tracking-widest opacity-60">Компания</span>
+                        <input name="company" type="text"
+                            class="bg-transparent border-b border-current py-2 outline-none focus:border-[var(--salmon)] transition-colors">
+                    </label>
+                    <label class="flex flex-col gap-2">
+                        <span data-i18n="f_contact"
+                            class="uppercase text-xs font-bold tracking-widest opacity-60">Контакт</span>
+                        <input required name="contact" type="text"
+                            class="bg-transparent border-b border-current py-2 outline-none focus:border-[var(--salmon)] transition-colors">
+                    </label>
+                    <label class="flex flex-col gap-2">
+                        <span data-i18n="f_task"
+                            class="uppercase text-xs font-bold tracking-widest opacity-60">Задача</span>
+                        <textarea required name="task" rows="4"
+                            class="bg-transparent border-b border-current py-2 outline-none focus:border-[var(--salmon)] transition-colors resize-none"></textarea>
+                    </label>
+                    <button type="submit"
+                        class="w-fit border border-current px-10 py-3 uppercase text-sm font-semibold hover:bg-[var(--salmon)] hover:text-black hover:border-[var(--salmon)] transition-colors mt-4"
+                        data-i18n="cta_btn">Обсудить проект</button>
+                </form>
+            </div>
+            <footer class="mt-32 pt-8 border-t border-current flex items-center justify-between opacity-60 text-sm">
+                <span class="font-['Pp Neue Machina']">DRAWBRIDGE</span>
+                <span data-i18n="footer_note">Software, AI, Infrastructure, Integration.</span>
+            </footer>
+        </div>
+    </div>
+
+    <script src="i18n.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
