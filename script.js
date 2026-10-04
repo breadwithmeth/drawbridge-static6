@@ -53,9 +53,21 @@ function homePageAnimation() {
     tl.to(".vdodiv", { "--clip": "0%", ease: Power2, duration: 1.2 }, "a")
         .to(".slidesm", { scale: 1, ease: Power2, duration: 1.2 }, "a")
         .to(".heading", { opacity: 0, y: -60, ease: Power2, duration: 0.6 }, "a+=0.5")
-        .to(".btmtext", { opacity: 0, ease: Power2, duration: 0.4 }, "a+=0.6")
-        .to(".lft", { xPercent: -10, stagger: 0.03, ease: Power4, duration: 0.8 }, "a+=0.7")
-        .to(".rgt", { xPercent: 10, stagger: 0.03, ease: Power4, duration: 0.8 }, "a+=0.7");
+        .to(".btmtext", { opacity: 0, ease: Power2, duration: 0.4 }, "a+=0.6");
+}
+
+/* Infinite marquee: rows scroll continuously, lft → left, rgt → right.
+   Motion itself is a CSS animation (see .row.lft / .row.rgt in style.css);
+   here we only duplicate content for a seamless -50% loop. */
+function marqueeLoop() {
+    document.querySelectorAll(".row").forEach(function (row) {
+        var original = row.innerHTML;
+        while (row.scrollWidth < window.innerWidth * 2.2) {
+            row.innerHTML += original;
+        }
+        var half = row.scrollWidth / 2;
+        row.style.animationDuration = (half / 90) + "s"; // constant speed ~90px/s
+    });
 }
 
 function processPageAnimation() {
@@ -167,6 +179,7 @@ function initForm() {
 applyLang(CURRENT_LANG);
 initLangSwitcher();
 homePageAnimation();
+marqueeLoop();
 processPageAnimation();
 listHoverAnimation();
 paraAnimation();
