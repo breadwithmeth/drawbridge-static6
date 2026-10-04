@@ -4,7 +4,7 @@
     --white: #fff;
     --cyan: #AEDEE0;
     --dsalmon: #2E1206;
-    --dcyan: #000000; 
+    --dcyan: #000000;
 }
 
 body{
@@ -46,13 +46,160 @@ h1, h2, h3, h4, .font-head{
 .row.lft{ animation: mq-left linear infinite; }
 .row.rgt{ animation: mq-right linear infinite; }
 
+/* ============ TABLET & PHONE ADAPTATION ============ */
+
+@media (max-width: 1100px){
+    .directions{
+        flex-direction: column !important;
+        gap: 2rem !important;
+    }
+    .directions .ltext{
+        position: static !important;
+        width: 100% !important;
+    }
+    .directions .cards{
+        width: 100% !important;
+    }
+    .btmtext{
+        display: none !important;
+    }
+}
+
+@media (max-width: 767px){
+    .section{
+        padding-left: 6vw !important;
+        padding-right: 6vw !important;
+    }
+
+    /* hero */
+    .heading{
+        width: 90vw !important;
+        padding: 0 4vw !important;
+    }
+    .heading h1[data-i18n="hero_title"]{
+        font-size: 2.1rem !important;
+    }
+    .heading .flex{
+        flex-wrap: wrap !important;
+    }
+    .btmtext{
+        display: none !important;
+    }
+    .row{
+        gap: 1.6rem !important;
+    }
+    .row h1{
+        font-size: 2.6rem !important;
+    }
+    .row .imgdiv{
+        width: 2rem !important;
+        height: 2rem !important;
+    }
+
+    /* directions */
+    .dircard h2{
+        font-size: 1.4rem !important;
+    }
+
+    /* process */
+    .pslide > div{
+        width: 88% !important;
+    }
+    .pslide h1{
+        font-size: 2rem !important;
+    }
+    .pslide p{
+        font-size: 1rem !important;
+    }
+    .pslide h3:first-child{
+        font-size: 4.5rem !important;
+    }
+
+    /* solutions */
+    .solcard{
+        min-height: 0 !important;
+        padding: 1.5rem !important;
+    }
+
+    /* build list */
+    .build .list h1{
+        font-size: 1.1rem !important;
+    }
+    .build .list h3{
+        font-size: .9rem !important;
+    }
+    .listelem{
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+    }
+    .listelem .left{
+        gap: 1rem !important;
+    }
+
+    /* big section titles */
+    .cases h1,
+    .tech h1,
+    .audience h1,
+    .why h1,
+    .faq h1{
+        font-size: 2.4rem !important;
+    }
+    .build h1.uppercase{
+        font-size: 2rem !important;
+    }
+
+    /* cases */
+    .casecard{
+        padding: 1.5rem !important;
+    }
+
+    /* why */
+    .why .w-\[75\%\]{
+        width: 100% !important;
+    }
+    .textpara{
+        font-size: 1.2rem !important;
+        line-height: 1.9rem !important;
+    }
+
+    /* geography */
+    .geo h1{
+        font-size: 3rem !important;
+    }
+    .geo .w-\[60\%\]{
+        width: 100% !important;
+    }
+    .geo .flex-col{
+        align-items: flex-start !important;
+    }
+    .geo .text-right{
+        text-align: left !important;
+    }
+    .geo .text-right p{
+        font-size: 1.3rem !important;
+    }
+
+    /* faq */
+    .faqq span:first-child{
+        font-size: 1rem !important;
+    }
+    .faqico{
+        font-size: 2rem !important;
+    }
+
+    /* cta */
+    .cta h1{
+        font-size: 2.2rem !important;
+    }
+}
+
 
 *::selection{
-    background-color: var(--salmon);
+    background-color: var(--salmon) !important;
 }
 
 body[theme="black"]{
-    background-color: var(--black);
+    background-color: var(--black) !important;
 }
 
 body[theme="black"] .section{
@@ -60,25 +207,25 @@ body[theme="black"] .section{
 }
 
 body[theme="cyan"]{
-    background-color: var(--cyan);
+    background-color: var(--cyan) !important;
 }
 
 body[theme="cyan"] .section{
-    color: var(--dcyan);
+    color: var(--dcyan) !important;
 }
 
 body[theme="salmon"]{
-    background-color: var(--salmon);
+    background-color: var(--salmon) !important;
 }
 
 body[theme="salmon"] .section{
-    color: var(--dsalmon);
+    color: var(--dsalmon) !important;
 }
 
 body[theme="white"]{
-    background-color: var(--white);
+    background-color: var(--white) !important;
 }
 
 body[theme="white"] .section{
-    color: var(--black);
+    color: var(--black) !important;
 }
