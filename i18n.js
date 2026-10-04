@@ -14,6 +14,7 @@ const I18N = {
     nav_faq: "FAQ",
     nav_contact: "Контакт",
 
+    hero_title: "Соединяем сложные системы",
     hero_sub: "DRAWBRIDGE проектирует и внедряет программные, AI, инфраструктурные и автоматизированные системы для бизнеса и государства.",
     cta_project: "Обсудить проект",
     cta_solutions: "Наши решения",
@@ -157,6 +158,7 @@ const I18N = {
     nav_faq: "FAQ",
     nav_contact: "Contact",
 
+    hero_title: "We connect complex systems",
     hero_sub: "DRAWBRIDGE designs and deploys software, AI, infrastructure and automated systems for business and government.",
     cta_project: "Discuss a project",
     cta_solutions: "Our solutions",
@@ -300,6 +302,7 @@ const I18N = {
     nav_faq: "FAQ",
     nav_contact: "Контакт",
 
+    hero_title: "Күрделі жүйелерді біріктіреміз",
     hero_sub: "DRAWBRIDGE бизнес пен мемлекет үшін бағдарламалық, AI, инфрақұрылымдық және автоматтандырылған жүйелерді жобалайды және енгізеді.",
     cta_project: "Жобаны талқылау",
     cta_solutions: "Шешімдеріміз",

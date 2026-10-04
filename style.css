@@ -1,18 +1,29 @@
 :root{
-    --salmon: #EF9D71;
+    --salmon: #FF6A00;
     --black: #000;
     --white: #fff;
     --cyan: #AEDEE0;
-    --dsalmon: #532521;
+    --dsalmon: #2E1206;
     --dcyan: #000000; 
 }
 
 body{
     transition: background-color ease-out .5s;
+    font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif;
+}
+
+h1, h2, h3, h4, .font-head{
+    font-family: 'Unbounded', 'Manrope', sans-serif;
 }
 
 .vdodiv{
     clip-path: circle(var(--clip) at 50% 50%);
+}
+
+/* outlined words for the hero marquee (hero is always on black) */
+.outline-word{
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
 }
 
 

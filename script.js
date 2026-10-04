@@ -50,10 +50,12 @@ function homePageAnimation() {
         },
     });
 
-    tl.to(".vdodiv", { "--clip": "0%", ease: Power2 }, "a")
-        .to(".slidesm", { scale: 1, ease: Power2 }, "a")
-        .to(".lft", { xPercent: -10, stagger: 0.03, ease: Power4 }, "b")
-        .to(".rgt", { xPercent: 10, stagger: 0.03, ease: Power4 }, "b");
+    tl.to(".vdodiv", { "--clip": "0%", ease: Power2, duration: 1.2 }, "a")
+        .to(".slidesm", { scale: 1, ease: Power2, duration: 1.2 }, "a")
+        .to(".heading", { opacity: 0, y: -60, ease: Power2, duration: 0.6 }, "a+=0.5")
+        .to(".btmtext", { opacity: 0, ease: Power2, duration: 0.4 }, "a+=0.6")
+        .to(".lft", { xPercent: -10, stagger: 0.03, ease: Power4, duration: 0.8 }, "a+=0.7")
+        .to(".rgt", { xPercent: 10, stagger: 0.03, ease: Power4, duration: 0.8 }, "a+=0.7");
 }
 
 function processPageAnimation() {
