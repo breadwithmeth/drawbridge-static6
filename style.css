@@ -88,7 +88,7 @@ h1, h2, h3, h4, .font-head{
     .row{
         gap: 1.6rem !important;
     }
-    .row h1{
+    .row h2{
         font-size: 2.6rem !important;
     }
     .row .imgdiv{
@@ -96,7 +96,15 @@ h1, h2, h3, h4, .font-head{
         height: 2rem !important;
     }
 
+    /* audience */
+    .audience h2{
+        font-size: 1.5rem !important;
+    }
+
     /* directions */
+    .directions .ltext h2{
+        font-size: 2rem !important;
+    }
     .dircard h2{
         font-size: 1.4rem !important;
     }
@@ -105,13 +113,13 @@ h1, h2, h3, h4, .font-head{
     .pslide > div{
         width: 88% !important;
     }
-    .pslide h1{
+    .pslide h2{
         font-size: 2rem !important;
     }
     .pslide p{
         font-size: 1rem !important;
     }
-    .pslide h3:first-child{
+    .pslide h3.text-\[10rem\]{
         font-size: 4.5rem !important;
     }
 
@@ -122,7 +130,7 @@ h1, h2, h3, h4, .font-head{
     }
 
     /* build list */
-    .build .list h1{
+    .build .list h2{
         font-size: 1.1rem !important;
     }
     .build .list h3{
@@ -137,14 +145,14 @@ h1, h2, h3, h4, .font-head{
     }
 
     /* big section titles */
-    .cases h1,
-    .tech h1,
-    .audience h1,
-    .why h1,
-    .faq h1{
+    .cases h2,
+    .tech h2,
+    .audience h2,
+    .why h2,
+    .faq h2{
         font-size: 2.4rem !important;
     }
-    .build h1.uppercase{
+    .build h2.uppercase{
         font-size: 2rem !important;
     }
 
@@ -163,7 +171,7 @@ h1, h2, h3, h4, .font-head{
     }
 
     /* geography */
-    .geo h1{
+    .geo h2{
         font-size: 3rem !important;
     }
     .geo .w-\[60\%\]{
@@ -188,7 +196,7 @@ h1, h2, h3, h4, .font-head{
     }
 
     /* cta */
-    .cta h1{
+    .cta h2{
         font-size: 2.2rem !important;
     }
 }

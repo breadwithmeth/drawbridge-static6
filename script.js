@@ -1,10 +1,18 @@
 /* ================= I18N ================= */
-var CURRENT_LANG = localStorage.getItem("db_lang") || "ru";
+/* Language is determined by the URL path (/ => ru, /en/ => en, /kz/ => kz).
+   DB_DEFAULT_LANG lets static copies (e.g. local preview) pin a language. */
+function dbLangFromPath() {
+    if (window.DB_DEFAULT_LANG) return window.DB_DEFAULT_LANG;
+    var p = location.pathname;
+    if (p.indexOf("/en") === 0) return "en";
+    if (p.indexOf("/kz") === 0) return "kz";
+    return "ru";
+}
+var CURRENT_LANG = dbLangFromPath();
 
 function applyLang(lang) {
     if (!I18N[lang]) lang = "ru";
     CURRENT_LANG = lang;
-    localStorage.setItem("db_lang", lang);
     document.documentElement.setAttribute("lang", lang === "kz" ? "kk" : lang);
 
     document.querySelectorAll("[data-i18n]").forEach(function (el) {
@@ -31,7 +39,11 @@ function applyLang(lang) {
 function initLangSwitcher() {
     document.querySelectorAll(".langbtn").forEach(function (btn) {
         btn.addEventListener("click", function () {
-            if (btn.dataset.lang !== CURRENT_LANG) applyLang(btn.dataset.lang);
+            if (btn.dataset.lang !== CURRENT_LANG) {
+                // Navigate to the language folder so each language has its own indexable URL
+                var l = btn.dataset.lang;
+                window.location.href = (l === "ru") ? "/" : "/" + l + "/";
+            }
         });
     });
 }
