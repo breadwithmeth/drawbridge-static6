@@ -144,12 +144,12 @@ h1, h2, h3, h4, .font-head{
         gap: 1rem !important;
     }
 
-    /* big section titles */
-    .cases h2,
-    .tech h2,
-    .audience h2,
-    .why h2,
-    .faq h2{
+    /* big section titles (direct children only, so card headings keep their size) */
+    .cases > h2,
+    .tech > h2,
+    .audience > h2,
+    .why > h2,
+    .faq > h2{
         font-size: 2.4rem !important;
     }
     .build h2.uppercase{
@@ -236,4 +236,8 @@ body[theme="white"]{
 
 body[theme="white"] .section{
     color: var(--black) !important;
+}
+/* Prevent horizontal overflow on mobile (side gaps) */
+html, body{
+    overflow-x: clip;
 }

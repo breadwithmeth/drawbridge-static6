@@ -85,15 +85,22 @@ function marqueeLoop() {
 function processPageAnimation() {
     var slides = document.querySelectorAll(".pslide");
     if (!slides.length) return;
+    var track = document.querySelector(".pslides");
+    // shift by the exact width of (n-1) slides + the gaps between them,
+    // recalculated on resize so the last slide is always fully visible
     gsap.to(".pslide", {
         scrollTrigger: {
             trigger: ".proc",
             start: "top top",
             end: "bottom bottom",
             scrub: 1,
+            invalidateOnRefresh: true,
         },
-        // one full slide width per extra slide, small slack like the original
-        xPercent: -(slides.length - 1) * 100 - 5,
+        x: function () {
+            var gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+            var w = slides[0].getBoundingClientRect().width;
+            return -((slides.length - 1) * (w + gap));
+        },
         ease: Power4,
     });
 }

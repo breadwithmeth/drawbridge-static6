@@ -111,6 +111,12 @@ const I18N = {
     case4_done: "Разработка аппаратной части системы; автономный канал дальней радиосвязи; передача телеметрии от удалённых устройств; сбор данных о местоположении сотрудников; передача физиологических показателей; центральный модуль сбора и обработки данных; мониторинг состояния сотрудников в реальном времени.",
     case4_tech: "LoRa, GNSS, embedded C, MQTT, web-мониторинг",
     case4_res: "Создан автономный контур связи и мониторинга, работающий на удалённых промышленных объектах без зависимости от стандартного покрытия мобильных сетей. Система позволяет получать данные о состоянии и местоположении сотрудников и передавать их в единый контур мониторинга даже в условиях отсутствия привычной инфраструктуры связи.",
+    case5_name: "AMA Ltd. — цифровая платформа управления портовыми расходами судовладельцев",
+    case5_t: "Разработать цифровую платформу для управления и контроля портовых расходов судовладельцев.",
+    case5_src: "Учёт Disbursement Accounts (DA) вёлся разрозненно: расходы по портам и судозаходам собирались вручную, контроль заявленных и фактических затрат был затруднён.",
+    case5_done: "Централизованный учёт Disbursement Accounts (DA); структурирование расходов по портам и судозаходам; контроль заявленных и фактических затрат; прозрачное взаимодействие между судовладельцами, агентами и другими участниками портовых операций.",
+    case5_tech: "Web-платформа, PostgreSQL, REST API, автоматизация сверки расчётов",
+    case5_res: "Судовладельцы получили единый инструмент учёта и контроля портовых расходов: прозрачное сопоставление заявленных и фактических затрат по каждому судозаходу и снижение трудозатрат на взаимодействие с агентами.",
 
     tech_label: "Технологии",
 
@@ -267,6 +273,12 @@ const I18N = {
     case4_done: "Hardware development for the system; an autonomous long-range radio channel; telemetry transmission from remote devices; collection of employee location data; transmission of physiological indicators; a central data collection and processing module; real-time monitoring of employee condition.",
     case4_tech: "LoRa, GNSS, embedded C, MQTT, web monitoring",
     case4_res: "An autonomous communication and monitoring loop was built for remote industrial sites with no dependency on standard mobile network coverage. The system provides data on employee condition and location and feeds it into a unified monitoring loop even without conventional communication infrastructure.",
+    case5_name: "AMA Ltd. — digital platform for shipowners' port disbursement management",
+    case5_t: "Develop a digital platform for managing and controlling shipowners' port expenses.",
+    case5_src: "Disbursement Accounts (DA) were tracked in a fragmented way: expenses by port and port call were collected manually, making it hard to control estimated versus actual costs.",
+    case5_done: "Centralized accounting of Disbursement Accounts (DA); structuring expenses by port and port call; control of estimated and actual costs; transparent collaboration between shipowners, agents and other port operation participants.",
+    case5_tech: "Web platform, PostgreSQL, REST API, automated reconciliation",
+    case5_res: "Shipowners received a single tool for accounting and controlling port expenses: transparent comparison of estimated and actual costs for each port call and reduced effort in cooperating with agents.",
 
     tech_label: "Technologies",
 
@@ -423,6 +435,12 @@ const I18N = {
     case4_done: "Жүйенің аппараттық бөлігін әзірлеу; автономды қашық радиобайланыс арнасы; қашық құрылғылардан телеметрияны жіберу; қызметкерлердің орналасуы туралы деректерді жинау; физиологиялық көрсеткіштерді жіберу; деректерді жинау мен өңдеудің орталық модулі; қызметкерлердің күйін нақты уақыт режимінде мониторингтеу.",
     case4_tech: "LoRa, GNSS, embedded C, MQTT, web-мониторинг",
     case4_res: "Мобильді желілердің стандартты қамтуына тәуелсіз, қашық өнеркәсіптік нысандарда жұмыс істейтін автономды байланыс және мониторинг контуры құрылды. Жүйе қызметкерлердің күйі мен орналасуы туралы деректерді алып, оларды әдеттегі байланыс инфрақұрылымы болмаған жағдайда да бірыңғай мониторинг контурына жібереді.",
+    case5_name: "AMA Ltd. — кемелер иелерінің порт шығындарын басқару цифрлық платформасы",
+    case5_t: "Кемелер иелерінің порт шығындарын басқару және бақылау үшін цифрлық платформа әзірлеу.",
+    case5_src: "Disbursement Accounts (DA) есебі шашыраңқы жүргізілді: порттар мен кемелердің кірулері бойынша шығындар қолмен жиналды, мәлімделген және нақты шығындарды бақылау қиын болды.",
+    case5_done: "Disbursement Accounts (DA) орталықтандырылған есебі; шығындарды порттар мен кемелердің кірулері бойынша құрылымдау; мәлімделген және нақты шығындарды бақылау; кемелер иелері, агенттер және порт операцияларының басқа қатысушылары арасындағы ашық өзара іс-қимыл.",
+    case5_tech: "Web-платформа, PostgreSQL, REST API, автоматтандырылған есептесу",
+    case5_res: "Кемелер иелері порт шығындарын есептеу және бақылаудың біртұтас құралын алды: әр кеменің кіруі бойынша мәлімделген және нақты шығындарды ашық салыстыру және агенттермен жұмыс еңбек шығындарының азаюы.",
 
     tech_label: "Технологиялар",
 
