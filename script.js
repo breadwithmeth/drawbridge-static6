@@ -69,16 +69,60 @@ function homePageAnimation() {
 }
 
 /* Infinite marquee: rows scroll continuously, lft → left, rgt → right.
-   Motion itself is a CSS animation (see .row.lft / .row.rgt in style.css);
-   here we only duplicate content for a seamless -50% loop. */
+   Content is duplicated for a seamless -50% loop; motion is driven by GSAP
+   so the speed and skew can react to the user's scroll velocity (#6). */
 function marqueeLoop() {
+    var rows = [];
     document.querySelectorAll(".row").forEach(function (row) {
         var original = row.innerHTML;
         while (row.scrollWidth < window.innerWidth * 2.2) {
             row.innerHTML += original;
         }
-        var half = row.scrollWidth / 2;
-        row.style.animationDuration = (half / 90) + "s"; // constant speed ~90px/s
+        rows.push(row);
+    });
+
+    var tweens = rows.map(function (row) {
+        var toLeft = row.classList.contains("lft");
+        var half = row.scrollWidth / 2; // px of one content copy
+        // base drift ~90px/s, lft moves left, rgt moves right
+        return gsap.fromTo(row,
+            { x: toLeft ? 0 : -half },
+            {
+                x: toLeft ? -half : 0,
+                duration: half / 90,
+                ease: "none",
+                repeat: -1,
+            });
+    });
+
+    // Scroll velocity → extra speed + skew, smoothly returning to base drift
+    var speed = { v: 1 };   // timeScale multiplier
+    var skew = { v: 0 };    // skewX degrees
+
+    ScrollTrigger.create({
+        onUpdate: function (self) {
+            var v = self.getVelocity();
+            // boost: 1 → up to ~4x at fast scroll
+            gsap.to(speed, { v: 1 + Math.min(Math.abs(v) / 900, 3), duration: 0.3, overwrite: true });
+            gsap.to(skew, {
+                v: gsap.utils.clamp(-14, 14, v / -180),
+                duration: 0.4,
+                overwrite: true,
+            });
+        },
+    });
+
+    gsap.ticker.add(function () {
+        // ease the boost and skew back to normal when scrolling stops
+        speed.v += (1 - speed.v) * 0.06;
+        skew.v += (0 - skew.v) * 0.08;
+        tweens.forEach(function (tween, i) {
+            var row = rows[i];
+            var dir = row.classList.contains("lft") ? -1 : 1;
+            tween.timeScale(speed.v);
+            row.style.transform = "translateX(" + gsap.getProperty(row, "x") + "px)" +
+                " skewX(" + (skew.v * dir) + "deg)";
+        });
     });
 }
 
@@ -174,25 +218,6 @@ function initFaq() {
     });
 }
 
-/* ================= CTA form (static site: opens mail client) =================
-   Replace "info@drawbridge.kz" in index.html (form action) with the real address. */
-function initForm() {
-    var form = document.getElementById("ctaform");
-    if (!form) return;
-    form.addEventListener("submit", function (e) {
-        e.preventDefault();
-        var data = new FormData(form);
-        var subject = encodeURIComponent("DRAWBRIDGE — " + (data.get("company") || data.get("name") || ""));
-        var body = encodeURIComponent(
-            (I18N[CURRENT_LANG].f_name) + ": " + (data.get("name") || "") + "\n" +
-            (I18N[CURRENT_LANG].f_company) + ": " + (data.get("company") || "") + "\n" +
-            (I18N[CURRENT_LANG].f_contact) + ": " + (data.get("contact") || "") + "\n" +
-            (I18N[CURRENT_LANG].f_task) + ": " + (data.get("task") || "")
-        );
-        window.location.href =
-            form.getAttribute("action").split("?")[0] + "?subject=" + subject + "&body=" + body;
-    });
-}
 
 /* ================= INIT ================= */
 applyLang(CURRENT_LANG);
@@ -203,7 +228,6 @@ processPageAnimation();
 listHoverAnimation();
 paraAnimation();
 initFaq();
-initForm();
 bodyColorChange();
 
 // Locomotive Scroll (kept from the original setup)

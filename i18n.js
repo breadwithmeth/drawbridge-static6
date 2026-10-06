@@ -160,6 +160,8 @@ const I18N = {
     faq6_a: "Нет. DRAWBRIDGE работает на стыке software, infrastructure, AI, automation и hardware.",
 
     cta_title: "РАССКАЖИТЕ О ЗАДАЧЕ",
+    contact_title: "СВЯЖИТЕСЬ С НАМИ",
+    contact_sub: "Расскажите о вашей задаче — обсудим, что можно автоматизировать, интегрировать или построить с нуля.",
     cta_sub: "Опишите существующую систему, проблему или задачу. Мы определим, что можно автоматизировать, интегрировать или построить с нуля.",
     f_name: "Имя",
     f_company: "Компания",
@@ -322,6 +324,8 @@ const I18N = {
     faq6_a: "No. DRAWBRIDGE works at the intersection of software, infrastructure, AI, automation and hardware.",
 
     cta_title: "TELL US ABOUT YOUR TASK",
+    contact_title: "GET IN TOUCH",
+    contact_sub: "Tell us about your task — we will discuss what can be automated, integrated or built from scratch.",
     cta_sub: "Describe the existing system, the problem or the task. We will determine what can be automated, integrated or built from scratch.",
     f_name: "Name",
     f_company: "Company",
@@ -484,6 +488,8 @@ const I18N = {
     faq6_a: "Жоқ. DRAWBRIDGE software, infrastructure, AI, automation және hardware-дың түйісінде жұмыс істейді.",
 
     cta_title: "МӘСЕЛЕҢІЗДІ АЙТЫҢЫЗ",
+    contact_title: "БІЗБЕН БАЙЛАНЫСЫҢЫЗ",
+    contact_sub: "Мәселеңізді айтыңыз — нені автоматтандыруға, интеграциялауға немесе нөлден құруға болатынын талқылаймыз.",
     cta_sub: "Бар жүйені, мәселені немесе тапсырманы сипаттаңыз. Нені автоматтандыруға, интеграциялауға немесе нөлден құруға болатынын анықтаймыз.",
     f_name: "Аты",
     f_company: "Компания",

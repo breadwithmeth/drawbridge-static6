@@ -35,16 +35,7 @@ h1, h2, h3, h4, .font-head{
 }
 
 /* infinite marquee motion (duration is set per-row from script.js) */
-@keyframes mq-left{
-    from{ transform: translateX(0); }
-    to{ transform: translateX(-50%); }
-}
-@keyframes mq-right{
-    from{ transform: translateX(-50%); }
-    to{ transform: translateX(0); }
-}
-.row.lft{ animation: mq-left linear infinite; }
-.row.rgt{ animation: mq-right linear infinite; }
+/* marquee motion is driven by GSAP (script.js) so it can react to scroll speed */
 
 /* ============ TABLET & PHONE ADAPTATION ============ */
 

@@ -140,7 +140,7 @@
     }
     </script>
 
-    <link rel="stylesheet" href="../style.css?v=34">
+    <link rel="stylesheet" href="../style.css?v=35">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -993,42 +993,29 @@
         <section data-color="black" id="contact" class="cta section w-full py-32 px-10">
             <div class="flex flex-col lg:flex-row justify-between gap-16">
                 <div class="lg:w-[45%]">
-                    <h2 data-i18n="cta_title" class="text-6xl tracking-tighter">РАССКАЖИТЕ О
+                    <h2 data-i18n="contact_title" class="text-6xl tracking-tighter">РАССКАЖИТЕ О
                         ЗАДАЧЕ</h1>
-                    <p data-i18n="cta_sub" class="mt-8 leading-relaxed opacity-80 max-w-md">Опишите существующую
+                    <p data-i18n="contact_sub" class="mt-8 leading-relaxed opacity-80 max-w-md">Опишите существующую
                         систему, проблему или задачу. Мы определим, что можно автоматизировать, интегрировать или
                         построить с нуля.</p>
                 </div>
-                <!-- Static form: opens the user's mail client. Replace info@drawbridge.kz with the real address. -->
-                <form id="ctaform" class="lg:w-[45%] flex flex-col gap-6" action="mailto:shrvse@drawbridge.kz"
-                    method="post" enctype="text/plain">
-                    <label class="flex flex-col gap-2">
-                        <span data-i18n="f_name" class="uppercase text-xs font-bold tracking-widest opacity-60">Имя</span>
-                        <input required name="name" type="text"
-                            class="bg-transparent border-b border-current py-2 outline-none focus:border-[var(--salmon)] transition-colors">
-                    </label>
-                    <label class="flex flex-col gap-2">
-                        <span data-i18n="f_company"
-                            class="uppercase text-xs font-bold tracking-widest opacity-60">Компания</span>
-                        <input name="company" type="text"
-                            class="bg-transparent border-b border-current py-2 outline-none focus:border-[var(--salmon)] transition-colors">
-                    </label>
-                    <label class="flex flex-col gap-2">
-                        <span data-i18n="f_contact"
-                            class="uppercase text-xs font-bold tracking-widest opacity-60">Контакт</span>
-                        <input required name="contact" type="text"
-                            class="bg-transparent border-b border-current py-2 outline-none focus:border-[var(--salmon)] transition-colors">
-                    </label>
-                    <label class="flex flex-col gap-2">
-                        <span data-i18n="f_task"
-                            class="uppercase text-xs font-bold tracking-widest opacity-60">Задача</span>
-                        <textarea required name="task" rows="4"
-                            class="bg-transparent border-b border-current py-2 outline-none focus:border-[var(--salmon)] transition-colors resize-none"></textarea>
-                    </label>
-                    <button type="submit"
-                        class="w-fit border border-current px-10 py-3 uppercase text-sm font-semibold hover:bg-[var(--salmon)] hover:text-black hover:border-[var(--salmon)] transition-colors mt-4"
-                        data-i18n="cta_btn">Обсудить проект</button>
-                </form>
+                <div class="lg:w-[45%] flex flex-col">
+                    <a href="https://wa.me/77054810862" target="_blank" rel="noopener"
+                        class="contactlink border-t border-current py-7 flex items-center justify-between gap-4 hover:pl-3 transition-all">
+                        <span class="text-2xl font-semibold">WhatsApp</span>
+                        <span class="opacity-60 text-right">+7 705 481 08 62</span>
+                    </a>
+                    <a href="https://t.me/shrvse" target="_blank" rel="noopener"
+                        class="contactlink border-t border-current py-7 flex items-center justify-between gap-4 hover:pl-3 transition-all">
+                        <span class="text-2xl font-semibold">Telegram</span>
+                        <span class="opacity-60 text-right">@shrvse</span>
+                    </a>
+                    <a href="mailto:shrvse@drawbridge.kz"
+                        class="contactlink border-y border-current py-7 flex items-center justify-between gap-4 hover:pl-3 transition-all">
+                        <span class="text-2xl font-semibold">Email</span>
+                        <span class="opacity-60 text-right">shrvse@drawbridge.kz</span>
+                    </a>
+                </div>
             </div>
             <footer class="mt-32 pt-8 border-t border-current flex items-center justify-between opacity-60 text-sm">
                 <span class="">DRAWBRIDGE</span>
@@ -1046,7 +1033,7 @@
         integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
-    <script src="../script.js?v=13"></script>
+    <script src="../script.js?v=14"></script>
 </body>
 
 </html>
